@@ -1,0 +1,65 @@
+<!-- HyperionDev T40 - JSON - Book catalogue web app
+
+    Form input for data
+  
+    List output below with all book data currently in list
+  
+    A way to edit / remove book info-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book List</title>
+  <link rel="stylesheet" href="./booksStyles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body onload="loadBooks()">
+  <div class="page">
+    <h1>Book Catalogue - Session Storage Version</h1>
+    <div class="formHolder">
+      <form class="form">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" required>
+        <label for="author">Author</label>
+        <input type="text" name="author" id="author" required>
+        <label for="genre">Genre</label>
+        <input type="text" name="genre" id="genre" required>
+        <label for="rating">Rating</label>
+        <select name="rating" id="rating">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <label for="isRead">Have you read this book?</label>
+        <select name="isRead" id="isRead">
+          <option value="false">No</option>
+          <option value="true">Yes</option>
+        </select>
+        <button onclick="addBook()">Add book</button>
+      </form>
+    </div>
+
+    <div class="bookHolder">
+      <table id="table">
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Genre</th>
+          <th>Rating</th>
+          <th>Read it?</th>
+        </tr>
+
+      </table>
+    </div>
+  </div>
+
+  <script src="./books.js"></script>
+</body>
+</html>
