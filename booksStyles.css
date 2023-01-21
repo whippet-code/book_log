@@ -5,23 +5,27 @@
 }
 
 body {
-  background: var(--light);
-  font-family: 'Montserrat', sans-serif;
+  background: whitesmoke;
+  font-family: 'Cutive Mono', monospace;
   color: var(--light);
 }
 
 h1 {
   color: var(--dark);
   font-weight: 400;
-  width: 50vw;
+  width: 25vw;
+  margin: 0 auto;
+  margin-right: 22%;
+  padding: 2rem;
+  text-align: right;
 }
 
 input,
 select {
-  height: 2rem;
-  background: #edebd7;
-  color: #423e37;
-  font-family: 'Montserrat', sans-serif;
+  height: 2.5rem;
+  background: #423e37;
+  color: #edebd7;
+  font-family: 'Cutive Mono', monospace;
 }
 
 button {
@@ -30,33 +34,43 @@ button {
   height: 3rem;
   width: 25%;
   font-size: 1rem;
-  font-weight: 600;
-  border-radius: 0.5rem;
+  font-weight: 400;
+  border-radius: 0.3rem;
   margin: 0 auto;
   margin-top: 10px;
-  border: 1px solid var(--light);
+  border: 0.5px solid #edebd7;
+  font-family: 'Cutive Mono', monospace;
+  transition-property: all;
+  transition-duration: 400ms;
+  transition-timing-function: ease-out;
 }
 
 button:hover {
-  background: rgb(96, 92, 85);
+  background: var(--mid);
+  color: #423e37;
 }
 
 .editBtn,
 .delBtn {
   width: 4rem;
+  height: 3rem;
+  margin: 0;
 }
 
 .editBtn {
   background-color: rgb(0, 51, 0);
+  font-family: 'Cutive Mono', monospace;
 }
 
 .delBtn {
   background-color: rgb(64, 0, 0);
+  font-family: 'Cutive Mono', monospace;
 }
 
 
 .formHolder,
 .bookHolder {
+  margin: 0 auto;
   width: 50vw;
   min-width: 600px;
   padding: 1rem;
@@ -65,8 +79,9 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--mid);
+  background: var(--dark);
   padding: 1rem;
+  box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.3);
 }
 
 .form {
@@ -80,19 +95,19 @@ button:hover {
 
 .bookHolder {
   margin-top: 1rem;
-  background: var(--mid)
+  background: #423e37;
 }
 
 table {
+  width: 90%;
   min-width: 600px;
   background: #423e37;
   text-align: center;
-  padding: 0.5rem;
   border-radius: 0.5rem;
+  font-family: 'Cutive Mono', monospace;
 }
 
 th,
 td {
   border: 1px dotted var(--light);
-  padding: 0.5rem;
 }
